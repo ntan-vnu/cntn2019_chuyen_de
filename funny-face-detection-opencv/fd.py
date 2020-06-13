@@ -35,7 +35,7 @@ if __name__ == '__main__':
 	devface = cv2.imread('img/face.png', -1)
 	_h, _w, _ = devface.shape
 	count = 0
-	while True:
+	while (True):
 		ret, img = video_capture.read()
 		count += 1
 		if not ret or count%15 == 0:
