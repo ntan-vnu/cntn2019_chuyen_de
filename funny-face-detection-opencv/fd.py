@@ -53,11 +53,9 @@ if __name__ == '__main__':
 		try:
 			for (x,y,w,h) in faces:
 				tmp_devface = cv2.resize(devface, (0, 0), fx=float(w)/_w * 1.25, fy=float(h)/_h * 1.25)
-				px = x + w / 2 - tmp_devface.shape[1] / 2
-				py = y + h / 2 - tmp_devface.shape[0] / 2
+				px = int(x + w / 2 - tmp_devface.shape[1] / 2)
+				py = int(y + h / 2 - tmp_devface.shape[0] / 2)
 				img = overlay_transparent(img, tmp_devface, px, py)
-				roi_gray = gray[y:y+h, x:x+w]
-				roi_color = img[y:y+h, x:x+w]
 		except:
 			continue
 		cv2.imshow('live',img)
