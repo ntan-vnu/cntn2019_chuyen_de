@@ -1,0 +1,19 @@
+1. crop faces in data set images, resize into (128, 128)
+            python crop_face.py
+
+2. manually clean the data set
+
+3. create training and test sets
+            python init_dataset_meta.py
+
+4. train, save a model --> test accuracies
+            python train_test.py
+
+
+# genenal procedure to build a Machine Learning based model
+1. prepare a data set (clean, well-labeled)
+2. analyze characteristics/ distribution of the data set
+3. propose an architecture/model
+4. implemnt --> train --> test --> wrong predictions/cases
+5. analyze wrong predictions/cases --> update models --> [Step 4]
+6. report --> conclusion
