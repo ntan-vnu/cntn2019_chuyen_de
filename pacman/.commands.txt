@@ -1,0 +1,2 @@
+python pacman.py
+python pacman.py -l <layout_file> -p <search agent>

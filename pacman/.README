@@ -1,0 +1,6 @@
+Problem: FoodSearchProblem -> collects all food in the maze
+Targeted Algorithms: BFS, DFS, UCS, A*
+Working files:
+    SearchAgent.py     : BFSFoodSearchAgent, DFSFoodSearchAgent, UCSFoodSearchAgent, AStarFoodSearchAgent, foodHeuristic, ghostHeuristic
+    search.py          : depthFirstSearch, breadthFirstSearch, uniformCostSearch, aStarSearch
+    util.py            : Stack, Queue, PriorityQueue
